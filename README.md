@@ -1,7 +1,7 @@
 # Throttled Queue Decorator
 
 ## Install
-`npm i throttled-queue-decorator`
+`npm i @26brains/throttled-queue-decorator`
 
 ## Usage
 
