@@ -19,6 +19,18 @@ describe('throttle request', function(){
       assert.equal(result, 'cat');
     })
   })
+  describe('calling func with three args', () => {
+    it('should return all three args', async () => {
+      const throttle = createThrottle();
+      const funcA = (a, b, c) => ({ a, b, c });
+      const throttledFunc = throttle(funcA);
+
+      const timer = createTimer();
+      const result = await throttledFunc(1, 2, 3)
+
+      assert.deepEqual(result, { a: 1, b: 2, c: 3 });
+    })
+  })
   describe('running func twice should require 3s', () => {
     it('should return after 3s', async () => {
       const throttle = createThrottle(1, 3000);

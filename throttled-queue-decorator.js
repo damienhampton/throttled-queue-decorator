@@ -40,10 +40,10 @@ function createThrottle(requestsPerInteval = 100, interval = 0){
       processQueue();
     }
   }
-  return (func) => (args) => {
+  return (func) => (...args) => {
     return new Promise((resolve) => {
       enqueue(() => {
-        resolve(func(args));
+        resolve(func(...args));
       })
     })
   }
