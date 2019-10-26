@@ -1,5 +1,5 @@
 {
-  "name": "throttled-queue-decorator",
+  "name": "@26brains/throttled-queue-decorator",
   "version": "1.0.0",
   "description": "Throttles a function to a given number per interval. Uses promises and decorates original function.",
   "main": "throttled-queue-decorator.js",
