@@ -1,4 +1,4 @@
-# Throttle Queue Decorator
+# Throttled Queue Decorator
 
 ## Install
 `npm i throttled-queue-decorator`
@@ -27,6 +27,10 @@ main();
 # Tests
 
 `npm test`
+
+# Example
+
+`node example/example.js`
 
 ## Credits
 
