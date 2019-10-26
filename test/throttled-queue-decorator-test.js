@@ -57,7 +57,7 @@ describe('throttle request', function(){
       assert.isBelow(returnTimes[2], 4100, 'should return after 4s');
     })
   })
-  describe.only('func calls should be equally spaced', () => {
+  describe('func calls should be equally spaced', () => {
     it('should equally space calls', async () => {
       const throttle = createThrottle(2, 2000);
       const returnTimes = [];

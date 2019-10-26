@@ -24,6 +24,12 @@ const main = async () => {
 main();
 ```
 
+# Tests
+
+`npm test`
+
+## Credits
+
 Use of single `setTimeout()` event copied from https://github.com/shaunpersad/throttled-queue.
 
 
